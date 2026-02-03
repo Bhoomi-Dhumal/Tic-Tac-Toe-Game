@@ -6,18 +6,27 @@
 }
 
 /* Background and text alignment */
-body {
+ body {
     background-color: #548687;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-}
-
-/* Main game container */
-.container {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 2vmin; /* spacing between heading, board, button */
+}
+
+/* Main game container */
+ .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center everything */
+    align-items: center;     /* horizontally center */
+    gap: 6vmin;              /* space between heading, board, button */
+    padding: 1rem;
 }
 
 /* Game grid */
